@@ -17,6 +17,8 @@ nav {
 }
 
 .active {
+  position: relative;
+  z-index: 100;
   text-align: left;
   padding-left: 30px;
   color: black;
@@ -33,14 +35,14 @@ nav {
 ul {
   float: right;
   margin-right: 20px;
-  z-index: 5;
+  left: 100%;
 }
 
 ul li {
   display: inline-block;
   text-decoration: none;
   line-height: 70px;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .nav-color-change {
@@ -62,6 +64,7 @@ ul li {
   font-size: 30px;
   float: right;
   display: none;
+  position: relative;
 }
 
 #check {
@@ -71,16 +74,26 @@ ul li {
 @media all and (max-width: 760px) {
   .checkbtn {
     display: block;
+    z-index: 50;
+    cursor: pointer;
+    margin-right: 30px;
   }
 
   ul {
+    top: 0;
     position: fixed;
     width: 100%;
     height: 100vh;
     background: url(navtulp.jpg);
     background: fill;
     text-align: center;
+    z-index: 10;
     padding-top: 80px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 1;
   }
 
   ul li {
@@ -88,7 +101,14 @@ ul li {
   }
 
   .active {
-    display: none;
+    color: white;
+  }
+
+  .nav-color-change {
+    border: black 3px solid;
+    border-radius: 3px;
+    background: #a3a3a2;
+    opacity: 0.9;
   }
 
   #check:checked ~ ul {
@@ -115,19 +135,21 @@ hr {
 
 h1 {
   font-family: "Monsterrat";
-  text-align: center;
+  text-decoration: none;
   position: relative;
 }
 
 .underline {
   display: inline-block;
   position: relative;
+  margin-left: 43%;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .underline::before {
   content: "";
   display: block;
-  text-align: end;
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -236,6 +258,7 @@ body {
   font-family: Monsterrat;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 80px;
 }
 
 .txtb {
@@ -290,7 +313,8 @@ body {
   position: relative;
   width: 350px;
   height: 250px;
-  margin: 30px;
+  margin: 5px;
+  margin-bottom: 80px;
   box-shadow: 0 0 20px #000000b3;
   display: inline-block;
   box-sizing: border-box;
@@ -417,7 +441,7 @@ span {
 .myname {
   height: 10%;
   width: 50%;
-  display: flex;
+  display: block;
   font-family: AR julian;
   margin-left: 5%;
   border-radius: 2px solid black;
@@ -435,7 +459,10 @@ span {
   font-size: 30px;
   margin-left: 5%;
   background: white;
-  width: 20%;
+  display: inline-block;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */
