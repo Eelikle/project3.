@@ -18,19 +18,25 @@
 
   h1{
     font-family: "Monsterrat";
-    text-align: center;
+    text-decoration: none;
     position: relative;
     //margin: 100px auto;
     //display: inline-block;
+   // border: black solid 2px;
+    //margin-left: 500%;
   }
 .underline{
   display: inline-block;
   position: relative;
+  //text-align: center;
+  margin-left: 100px;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
   .underline::before{
       content:'';
       display: block;
-      text-align: end;
+     // text-align: end;
       position: absolute;
       width: 100%;
       transform: scaleX(0);
