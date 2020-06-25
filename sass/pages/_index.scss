@@ -18,7 +18,7 @@ span {
 .myname {
     height: 10%;
     width: 50%;
-    display: flex;
+    display: block;
     font-family:AR julian;
     margin-left: 5%;
     border-radius: 2px solid black;
@@ -34,5 +34,9 @@ span {
     font-size: 30px;
     margin-left: 5%;
     background: white;
-    width: 20%;
+    display: inline-block;
+    //border: black 2px solid;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    opacity: 0.6;
 }
