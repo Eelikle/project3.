@@ -142,7 +142,7 @@ h1 {
 .underline {
   display: inline-block;
   position: relative;
-  margin-left: 43%;
+  margin-left: 100px;
   margin-top: 5%;
   margin-bottom: 3%;
 }
