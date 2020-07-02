@@ -72,6 +72,14 @@ ul li {
 }
 
 @media all and (max-width: 730px) {
+  .name-container {
+    background: none;
+  }
+
+  .date-wrapper {
+    margin-left: 10%;
+  }
+
   .checkbtn {
     display: block;
     z-index: 50;
@@ -102,10 +110,6 @@ ul li {
 
   .active {
     color: black;
-  }
-
-  #underline-student {
-    margin-top: 30px;
   }
 
   h1 {
@@ -141,18 +145,21 @@ hr {
   margin-left: 20px;
 }
 
-h1 {
-  font-family: "Monsterrat";
-  text-decoration: none;
+.line-container {
   position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Monsterrat";
 }
 
 .underline {
   display: inline-block;
-  position: relative;
-  margin-left: 50%;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  position: absolute;
+  width: 50%;
 }
 
 .underline::before {
@@ -368,7 +375,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 3% 20% 77%;
+  grid-template-columns: 3% 25% 72%;
   margin-bottom: 3%;
 }
 
@@ -378,7 +385,7 @@ body {
 }
 
 .date-wrapper {
-  margin-left: 3px;
+  margin-left: 10px;
 }
 
 .course-name {
@@ -433,10 +440,11 @@ body {
 .name-container {
   background: url(homepage.jpg);
   -webkit-background-size: cover;
-  height: 100vh;
-  background-size: cover;
+  background-size: fill;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-bottom: 30%;
+  padding-right: 40%;
 }
 
 span {
@@ -445,7 +453,7 @@ span {
 
 .myname {
   height: 10%;
-  width: 50%;
+  width: 80%;
   display: block;
   font-family: AR julian;
   margin-left: 5%;
@@ -463,11 +471,10 @@ span {
   font-family: AR julian;
   font-size: 30px;
   margin-left: 5%;
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   display: inline-block;
   margin-bottom: 10%;
   margin-top: 5%;
-  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */

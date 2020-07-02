@@ -15,29 +15,28 @@
     width: 300px;
     margin-left: 20px;
   }
+  .line-container{
+    position: relative;
+   // left: 50%;
+    text-align: center;
+    width: 100%;
+  }
+
 
   h1{
+    display: inline-block;
     font-family: "Monsterrat";
-    text-decoration: none;
-    position: relative;
-    //margin: 100px auto;
-    //display: inline-block;
-   // border: black solid 2px;
-    //margin-left: 500%;
+    //position:relative;
+    
   }
 .underline{
   display: inline-block;
-  position: relative;
-  //text-align: center;
-  margin-left: 50%;
- // margin-right: 0%;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  position:absolute;
+  width: 50%;
 }
   .underline::before{
       content:'';
       display:block;
-     // text-align: end;
       position: absolute;
       width: 100%;
       transform: scaleX(0);
