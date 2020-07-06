@@ -1,64 +1,59 @@
-  p {
-    font-family: ar julian;
-    font-size: 14;
-  }
-  
-  h2 {
-    font-family: ar julian;
-  }
-  
-  hr {
-    border-top: 2px solid;
-    background: #000046;  
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
-    background: linear-gradient(to right, #1CB5E0, #000046); 
-    width: 300px;
-    margin-left: 20px;
-  }
-  .line-container{
-    position: relative;
-   // left: 50%;
-    text-align: center;
-    width: 100%;
-  }
-
-
-  h1{
-    display: inline-block;
-    font-family: "Monsterrat";
-    //position:relative;
-    
-  }
+p{
+  font-family: ar julian;
+  font-size: 14;
+}
+h2{
+  font-family: ar julian;
+}
+hr{
+  border-top: 2px solid;
+  background: #000046;  
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
+  background: linear-gradient(to right, #1CB5E0, #000046); 
+  width: 300px;
+  margin-left: 20px;
+}
+.line-container{
+  position: relative;
+  display: block;
+  padding-bottom: 8%;
+}
+h1{
+  margin-top: 20%;
+  display: inline-block;
+  font-family: "Monsterrat";
+}
 .underline{
   display: inline-block;
   position:absolute;
-  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% ,-50%);
+  margin-top: 3%;
 }
-  .underline::before{
-      content:'';
-      display:block;
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      background: #000046;  
-      background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  
-      background: linear-gradient(to left, #1CB5E0, #000046); 
-      height:5px;
-      border-radius: 30%;
-      bottom: 0;
-      left: 0;
-      transform-origin: bottom right;
-      //border-radius: 10px;
-      transition:transform 0.55s ease-out;
-    }
-    .underline:hover::before{
-      transform: scaleX(1);
-      text-align: end;
-      transform-origin: bottom right;
-    }
-
+.underline::before{
+  content:'';
+  display:block;
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  background: #000046;  
+  background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  
+  background: linear-gradient(to left, #1CB5E0, #000046); 
+  height:5px;
+  border-radius: 30%;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition:transform 0.55s ease-out;
+}
+.underline:hover::before{
+  transform: scaleX(1);
+  text-align: end;
+  transform-origin: bottom right;
+}
 body{
-  background: #1c92d2; 
+  background: #1c92d2;
   background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  
   background: linear-gradient(to right, #f2fcfe, #1c92d2); 
   height: 100%;

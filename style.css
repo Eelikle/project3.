@@ -14,6 +14,7 @@ nav {
   height: 70px;
   line-height: 70px;
   width: 100%;
+  background: #1c92d2;
 }
 
 .active {
@@ -30,6 +31,10 @@ nav {
 }
 .active:hover {
   transition-duration: scale(1.15);
+}
+
+#active {
+  display: none;
 }
 
 ul {
@@ -87,6 +92,23 @@ ul li {
     margin-right: 30px;
   }
 
+  #active {
+    display: inline;
+    position: relative;
+    z-index: -10;
+    text-align: left;
+    padding-left: 30px;
+    color: black;
+    line-height: 70px;
+    font-size: 50px;
+    font-family: monsterrat;
+    transform: scale(1);
+    transition-duration: 1000ms;
+  }
+  #active:hover {
+    transition-duration: scale(1.15);
+  }
+
   ul {
     top: 0;
     position: fixed;
@@ -113,7 +135,7 @@ ul li {
   }
 
   h1 {
-    margin-bottom: 30%;
+    margin-bottom: 1%;
   }
 
   .nav-color-change {
@@ -125,6 +147,10 @@ ul li {
 
   #check:checked ~ ul {
     left: 0;
+  }
+
+  #check:checked ~ #active {
+    z-index: 100;
   }
 }
 p {
@@ -147,11 +173,12 @@ hr {
 
 .line-container {
   position: relative;
-  text-align: center;
-  width: 100%;
+  display: block;
+  padding-bottom: 8%;
 }
 
 h1 {
+  margin-top: 20%;
   display: inline-block;
   font-family: "Monsterrat";
 }
@@ -159,7 +186,10 @@ h1 {
 .underline {
   display: inline-block;
   position: absolute;
-  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 3%;
 }
 
 .underline::before {
@@ -447,34 +477,33 @@ body {
   padding-right: 40%;
 }
 
-span {
-  color: black;
-}
-
 .myname {
-  height: 10%;
-  width: 80%;
-  display: block;
+  height: 5%;
+  width: 90%;
+  display: inline-block;
   font-family: AR julian;
   margin-left: 5%;
-  border-radius: 2px solid black;
-}
-
-.contact-links {
-  font-family: AR julian;
-  margin-top: 1%;
-  font-size: 50px;
-  margin-left: 5%;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 #underline-student {
   font-family: AR julian;
   font-size: 30px;
+  font-weight: bold;
   margin-left: 5%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
   display: inline-block;
   margin-bottom: 10%;
   margin-top: 5%;
+}
+
+.contact-links {
+  font-family: AR julian;
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 10%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 /*# sourceMappingURL=style.css.map */

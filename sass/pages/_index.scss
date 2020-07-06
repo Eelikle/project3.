@@ -1,3 +1,4 @@
+
 .name-container{
     background: url(homepage.jpg);
     -webkit-background-size: cover;
@@ -7,30 +8,32 @@
     padding-bottom: 30%;
     padding-right:40%;
 }
-span {
-    color: black;
-}
 .myname {
-    height: 10%;
-    width: 80%;
-    display: block;
+    height: 5%;
+    width: 90%;
+    display: inline-block;
     font-family:AR julian;
     margin-left: 5%;
-    border-radius: 2px solid black;
+   // border: 2px solid black;
+    background:rgba(255, 255, 255, 0.4);
+    //margin-bottom: 30%;
   }
-.contact-links{
-    font-family: AR julian;
-    margin-top: 1%;
-    font-size: 50px;
-    margin-left: 5%;
-}
 #underline-student{
     font-family: AR julian;
     font-size: 30px;
+    font-weight: bold;;
     margin-left: 5%;
-    background:rgba(255, 255, 255, 0.6);
+    background:rgba(255, 255, 255, 0.4);
     display: inline-block;
-    //border: black 2px solid;
     margin-bottom: 10%;
     margin-top: 5%;
+}
+.contact-links{
+    font-family: AR julian;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 10%;
+    width: 50%;
+    background:rgba(255, 255, 255, 0.4);
+    //background: rgba(138, 190, 240, 0.6);
 }

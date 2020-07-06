@@ -12,6 +12,7 @@ nav{
     height:70px;
     line-height: 70px;
     width: 100%;
+    background: #1c92d2;
 }
 .active{
     position: relative;
@@ -28,11 +29,12 @@ nav{
         transition-duration: scale(1.15);
     }
 }
-
+#active{
+    display: none;
+}
 ul{
     float:right;
     margin-right: 20px;
-    //z-index: 5;
     left: 100%;
 }
 ul li{
@@ -66,22 +68,32 @@ ul li{
 @media all and (max-width: 730px){
     .name-container{
         background:none;
-        //-webkit-background-size: cover;
-        //height: 100vh;
-        //background-size: cover;
-        //background-position: center center;
-       // background-repeat: no-repeat;
     }
-    .date-wrapper {
+    .date-wrapper{
         margin-left: 10%;
-      }
+    }
     .checkbtn{
         display: block;
         z-index: 50;
         cursor: pointer;
         margin-right: 30px;
     }
-    
+    #active{
+        display: inline;
+        position: relative;
+        z-index: -10;
+        text-align: left;
+        padding-left: 30px;
+        color:black;
+        line-height: 70px;
+        font-size: 50px;
+        font-family: monsterrat;
+        transform: scale(1);
+        transition-duration: 1000ms;
+        &:hover{
+            transition-duration: scale(1.15);
+        }
+    }
     ul{
         top:0;
         position: fixed;
@@ -98,7 +110,6 @@ ul li{
         background-repeat: no-repeat;
         opacity: 1;
     }
-    
     ul li{
         display: block;
     }
@@ -106,16 +117,18 @@ ul li{
         color:black;
     }
     h1{
-        margin-bottom: 30%;
+        margin-bottom: 1%;
     }
-
     .nav-color-change{
         border: black 3px solid;
         border-radius: 3px;
         background: rgb(163, 163, 162);
         opacity: 0.9;
     }
-    #check:checked ~ ul  {
+    #check:checked ~ ul{
         left: 0;
+    }
+    #check:checked ~ #active{
+        z-index: 100;
     }
 }
