@@ -66,9 +66,6 @@ ul li{
     display: none;
 }
 @media all and (max-width: 730px){
-    .name-container{
-        background:none;
-    }
     .date-wrapper{
         margin-left: 10%;
     }
@@ -99,7 +96,7 @@ ul li{
         position: fixed;
         width: 100%;
         height: 100%;
-        background: url(navtulp.jpg);
+        background: url(navtulp.JPG);
         background: fill;
         text-align: center;
         z-index:10;
@@ -108,13 +105,16 @@ ul li{
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        opacity: 1;
+        //background:rgba(123, 16, 223, 0.5);
     }
     ul li{
         display: block;
     }
     .active{
         color:black;
+    } 
+    .contact-links{
+        margin: auto 0;
     }
     h1{
         margin-bottom: 1%;
@@ -131,4 +131,5 @@ ul li{
     #check:checked ~ #active{
         z-index: 100;
     }
+   
 }
